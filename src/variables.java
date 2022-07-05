@@ -1,5 +1,5 @@
 public class variables {
-    public static void main(string[] args){
+    public static void main(String[] args){
         int longueur=200;
 //        longueur=20;
 //        longueur=35;
@@ -12,4 +12,5 @@ public class variables {
         int surface=longueur*largeur;
         System.out.println(perimetre);
         System.out.println(surface);
+    }
 }
