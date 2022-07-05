@@ -3,6 +3,7 @@ public class DataTypes {
 //        Chaine de caractères
         String prenom="Christian";
         String nom="Lisangola";
+        String nomComplet=prenom+" "+nom;
 
 //        Caractère
         char genre='m';
@@ -19,6 +20,11 @@ public class DataTypes {
 //        Byte : une variante d'entier court
         byte age=89;
 
-        System.out.println("Je suis"+prenom+" "+nom+",j'ai "+age+"ans. Mon Tjm est de "+tjm+ " Euros");
+        System.out.println("Je suis "+prenom+" "+nom+",j'ai "+age+" ans.Mon Tjm est de "+tjm+
+                " €.");
+
+        System.out.printf("Je suis %s %s,j'ai %d ans.Mon TJM est de %.1f€.\n",prenom,nom
+                ,age
+                ,tjm);
     }
 }
