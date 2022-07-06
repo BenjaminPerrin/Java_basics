@@ -6,10 +6,16 @@ public class Mathequals {
         System.out.print("votre nombre : ");
         byte nb=input.nextByte();
 
+        String isPair;
+        if (nb % 2 == 0) {
+            isPair = "pair";
+        }else{
+            isPair = "impair";
+    }
         if (nb > 0){
-            System.out.println("nb positif");
+            System.out.println("Le nombre est positif et "+isPair);
         }else if(nb < 0){
-            System.out.println("nb negatif");
+            System.out.println("Le nombre est negatif et "+isPair);
         }else{
             System.out.println("0 !");
         }
